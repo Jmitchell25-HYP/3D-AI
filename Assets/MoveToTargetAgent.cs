@@ -16,12 +16,18 @@ public class MoveToTargetAgent : Agent
     public override void OnEpisodeBegin()
     {
         transform.localPosition = new Vector3(
+<<<<<<< HEAD
 
         Random.Range(-4f, 4f), 0.5f, Random.Range(-4f, 0f));
 
         target.localPosition = new Vector3(
 
         Random.Range(-4f, 4f), 0.5f, Random.Range(1f, 4f));
+=======
+            Random.Range(-16f, 16f), 0.5f, Random.Range(-16f, 4f));
+        target.localPosition = new Vector3(
+            Random.Range(-16f, 16f), 0.5f, Random.Range(4f, 16f));
+>>>>>>> 66b02bde768bcc838efa66f884a5baa466727068
     }
 
     public override void CollectObservations(VectorSensor sensor)
